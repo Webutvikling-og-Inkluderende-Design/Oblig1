@@ -9,6 +9,7 @@ h1{
     color: white;
     text-align: justify;
     position:absolute; top: 50%; left: 17.5%;
+    text-shadow: 3px 3px #000000;
 }
 h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -45,19 +46,21 @@ p{
 }
 #navbar-text-meny{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
     color: white;
     text-decoration: none;
-    position:absolute; top: 75%; left: 40%;
+    position:absolute; top: 75%; left: 37.5%;
+    text-shadow: 3px 3px #000000;
 }
 #navbar-text-info{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
     color: white;
     text-decoration: none;
-    position:absolute; top: 75%; right: 40%;
+    position:absolute; top: 75%; right: 37.5%;
+    text-shadow: 3px 3px #000000;
 }
 
 /* Hovedmeny/valg av måltid. */
@@ -85,7 +88,7 @@ p{
     margin-bottom: 50px;
 }
 .meny-kort-box{
-    background-color: #33241F;
+    background-color: #16110f;
     max-width: 300px;
 }
 .meny-kort-box h3{
