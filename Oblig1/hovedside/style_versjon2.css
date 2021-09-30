@@ -9,6 +9,7 @@ h1{
     color: white;
     text-align: justify;
     position:absolute; top: 50%; left: 17.5%;
+    text-shadow: 3px 3px #000000;
 }
 h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -50,6 +51,7 @@ p{
     color: white;
     text-decoration: none;
     position:absolute; top: 75%; left: 40%;
+    text-shadow: 3px 3px #000000;
 }
 #navbar-text-info{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -58,6 +60,7 @@ p{
     color: white;
     text-decoration: none;
     position:absolute; top: 75%; right: 40%;
+    text-shadow: 3px 3px #000000;
 }
 
 /* Hovedmeny/valg av måltid. */
