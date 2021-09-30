@@ -4,42 +4,83 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>Rapport om tilgjengelighet</title>
 </head>
+
+<style>
+    body {
+        padding:3%;
+        text-align:justify;
+    }
+</style>
 
 <body>
     <h1> Kort rapport om nettsidens tilgjengelighet </h1>
 
     <p>
         Vi brukte nettsiden https://www.w3.org/WAI/tutorials/page-structure/ for å innhente informasjon om hvilke utfordringer
-        man kan oppleve i møte med en nettside.  Både for 
+        man kan oppleve i møte med en nettside. Her fant vi også grunnleggende informasjon om hvordan tilgjengelighet kan løses. 
+        Vi har tolket det slik at det er viktig å bruke tags på riktig måte, slik at man ved hjelp av disse kan navigere seg frem til 
+        riktig informasjon på en enkel måte. 
     </p>
+    <h2> Vårt første utkast </h2>
+    <p>
+        Vi opprettet et første utkast til nettside, med en html-fil og en CSS-fil. Nettsiden hadde navigering som 
+        tilsynelatende fungerte fint og informasjonen opplevdes ryddig presentert. Da vi lastet opp html-filen på 
+        https://achecker.achecks.ca/checker/index.php 
+        fikk vi tilbakemelding om at koden var fri for problemer. Den hadde likevel mange treff på "potential problems". 
+        Vi fikk beskjed om:
+        <ol>
+            <li>alt-teksten til bildet stemmer ikke med hva bildet viser</li>
+            <li>alt-teksten til bildet er for lite utfyllende</li>
+            <li>forventet en annen skalering av bildene</li>
+            <li>uventet å ha alt-tekst inne i en a-referanse</li>
+        </ol>
+
+    </p>
+    <h2> Andre utkast </h2>
+        <p>
+            I andre utkast oversatte vi alle alt-tekstene til engelsk og vi skrev en mer detaljert beskrivelse av bildene. Ved automatisk 
+            opplesning fra nettsiden vil en slik utfyllende beskrivelse gi bedre informasjon til brukeren. Valget om å endre teksten til 
+            engelsk handlet mest om å sjekke hvordan resultatet av https://achecker.achecks.ca/checker/index.php  ville bli nå, spesielt med tanke på å se sammenhengen mellom bildene 
+            og teksten.
+        </p>
+
+       <p> Vi la merke til at bildene var ganske små. I versjon 2 har vi derfor
+            gjort alle bildene litt større. 
+        </p>
+
+        <p> Vi synes det var rart at vi fikk beskjed om at det var uventet å ha en alt-tekst inne i en a-referanse. Vi tenker at
+            en slik alt-tekst kan gi god informasjon om hva dette klikket på nettsiden fører til. Vi valgte å beholde disse tekstene.
+        </p>
+        <p>
+            Vi la merke til at h1-overskriften hadde litt lite kontrast mot bakgrunnsbildet. Vi gjorde 
+            derfor skriften større og la på skygge, samtidig gjorde vi bakgrunnsbildet mørkere. 
+
+            Da vi testet skjermleseren på nettsiden vår la vi merke til at beskrivelsen av bildene leses før teksten under bildet. Vi opplevde 
+            dette som litt forvirrende og vurderte derfor å ha teksten over bildet. Designmessig synes vi dette fremstod rotete, og landet
+            på å beholde strukturen vi hadde. Vi er nysgjerrige på om det er mulig å tvinge skjermleseren til å lese teksten før bildet, men 
+            fikk ikke sjekket opp i dette før denne innleveringen. 
+            
+            For å gjøre teksten generelt enklere å lese gjorde vi også bakgrunnsfargen til "meny-kort-box"
+            mørkere, slik at den hvite skriften i alle &lt;p&gt; kom tydeligere frem. 
+
+            Vi leste gjennom koden på nytt, i sammenheng med informasjonen fra https://www.w3.org/WAI/tutorials/page-structure/. Da la vi
+            merke til at vi burde bruke &lt;nav&gt; på navigeringsmenyen vår. 
+        </p>
+        <p>
+            Vi brukte linken https://www.w3.org/WAI/ER/tools/?q=wcag-21-w3c-web-content-accessibility-guidelines-21 og så at det finnes
+            svært mange verktøy man kan bruke for å undersøke nettsiden sin for tilgjengelighet. Vi prøvde ut 
+            disse verktøyene: 
+            <ul>
+                <li>https://color.a11y.com/?wc3 - Sjekket kontrasen til fargene, og om nettsiden er enkel å lese.</li>
+                <li>https://achecker.achecks.ca/checker/index.php - </li>
+                <li>https://www.webaccessibility.com/ - sjekker om den er tilgjengelig for personer med funksjonsnedsettelser  </li>
+            </ul>       
+
+             Ingen av disse testene rapporterte nå om noen problemer. 
+        </p>
 </body>
-Synshemmede - Gjorde bildene større
-La inn skygge på teksten i overskriftsbildet og gjorde bildet mørkere.
-Brunfargen nederst og på kortene ble mørkere slik at den hvite skriften ble tydeligere. 
-La inn <nav> tag </nav> på hovedmenyen øverst.
-Vi vurderte å flytte teksten over bildene, slik at overskriften leses før bildet leses. 
-Kan man evt endre på screenreaderen slik at den leser det under bildet først?
 
-
-Fargeblinde
-Brukte nettside (a11y) for å sjekke color contrast - fikk ingen issues på websiden vår. 
-
-Mange feilmeldinger på bilder og alt-tekst og "long description".
-
-Kjørte gjennom AChecker. Ingen problemer. Kun potensielle problemer. 
-Kjørte gjennom webaccessibility.com, 100% health score. 
-
-
-Kan vi bruke dette? (hentet fra: https://www.w3.org/WAI/tutorials/page-structure/ )
-People with cognitive and learning disabilities can more easily find and prioritize content on the page.
-People using screen readers can skip to the main content directly and navigate to sections that are important to them.
-Keyboard users can browse pages and their sections more efficiently. Otherwise, users have to press the tab key multiple times to navigate through all links in each section.
-People using software that only shows the main content of a web page, such as people with cognitive disabilities, will receive better results if the page structure is correctly marked up.
-People with visual impairments, including people with low vision, have cues that provide orientation on the page and in the content.
-Mobile web users often have access to a so-called “reader” or “reading” mode that will only show the main content of the page if it is correctly marked up.
-People using certain browser plugins can use landmark roles to jump to specific sections on a page.
-There are additional benefits to a good, accessible page structure, beyond those experienced by people with disabilities. As an example, search engines can use the data to better index the content of a page.
