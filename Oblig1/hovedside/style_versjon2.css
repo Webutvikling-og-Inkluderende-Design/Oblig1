@@ -65,10 +65,11 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 15%; margin-right: 15%;
+    margin-left: 10%; margin-right: 10%;
     text-align: center;
     margin-bottom: 50px;
 }
+
 .hovedmeny-grid a{
     color: black;
     text-decoration: none;
@@ -85,7 +86,7 @@ p{
 }
 .meny-kort-box{
     background-color: #33241F;
-    max-width: 250px;
+    max-width: 300px;
 }
 .meny-kort-box h3{
     color: white;
